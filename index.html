@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://img.freepik.com/free-vector/question-mark-sign-brush-stroke-trash-style-typography-vector_53876-140880.jpg?w=740&t=st=1692416990~exp=1692417590~hmac=14d461855f8a18434b21bfaa9e5880f8f3b0aca1b29e63066929e3f2e308c075">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess The Word</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <header>
+            <h1>Guess the word!<button id="open" class="invisible-button">info!</button></h1>
+        </header>
+        <section>
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="text" id="inputElement" placeholder="write here..." maxlength="4" minlength="4">
+                    <article id="insertHere">
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article>
+                        <div class="input-container">
+                            <input type="text" maxlength="20" class="check" id="c1" placeholder=" " autocomplete="off">
+                            <input type="text" maxlength="1" class="check" id="c2" placeholder=" " autocomplete="off">
+                            <input type="text" maxlength="1" class="check" id="c3" placeholder=" " autocomplete="off">
+                            <input type="text" maxlength="1" class="check" id="c4" placeholder=" " autocomplete="off">
+                        </div>
+                        <button type="button" class="quit">quit</button>
+                        <p id="displayResult">You Won!</p>
+                        <button type="button" class="restart">restart</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+    <div class="modal paper-bg" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">How to play?</h5>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Computer will think of a secret four-letter word.</li>
+                        <li>You have to makes a guess by writing a four-letter word.</li>
+                        <li>For each guessed letter that is in the correct position, it's considered
+                            a "bull."</li>
+                        <li>For each guessed letter that is in the secret word but in the wrong
+                            position, it's considered a "cow."</li>
+                        <li>You have to make continues guesses, and after each guess, the feedback
+                            (cows and bulls) is provided until the correct word is guessed.</li>
+                        <li>Click to strike out unwanted letters in previously guessed words and also use rough dashes
+                            for guessing positions.</li>
+                        <li>If you correctly guess the secret word (4 bulls), you WIN :).</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="pu_button" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal paper-bg" tabindex="-1" role="dialog" id="warning">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Please type a meaningful 4-letter word.</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="pu_button" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

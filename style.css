@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgba(8, 8, 230, 0.5);
+    user-select: none;
+    font-size: 50px
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+body,
+.container {
+    height: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 95% !important;
+
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/backgroundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+header h1 {
+    font-size: 50px !important;
+    letter-spacing: 10px !important;
+    text-align: center;
+}
+
+.invisible-button {
+    position: absolute;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.modal-dialog,
+.modal-content {
+    background-color: transparent;
+}
+
+.paper-bg {
+    background-image: url('images/paper-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal-dialog {
+    margin: 0rem 2rem 0rem 3rem !important;
+    max-width: 1400px !important;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+}
+
+.modal-title,
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer,
+.pu_button,
+li {
+    border: 0px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 27px;
+    color: rgba(0, 15, 150, 0.7)
+}
+
+.pu_button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+button:focus {
+    margin: 0;
+    outline: none;
+}
+
+/* Not responsive.Need to work */
+.strikethrough {
+    position: relative;
+    display: inline-block;
+}
+
+.strikethrough::before {
+    content: '/';
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    pointer-events: none;
+    font-size: 100px !important;
+    color: rgba(0, 15, 150, 0.3);
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#inputElement,
+.quit,
+.restart {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#inputElement:focus,
+.quit:focus,
+.restart:focus {
+    margin: 0;
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(8, 8, 230, 0.5);
+}
+
+.input-container {
+    display: flex;
+}
+
+.check:focus {
+    margin: 0;
+    outline: none;
+}
+
+.check {
+    text-decoration: underline;
+    font-size: 90px !important;
+    margin-right: 20px;
+    width: 80px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
